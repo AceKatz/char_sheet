@@ -1,0 +1,38 @@
+# Template for save file
+# Comments start with a '#' -- lines end when # is encountered
+# IO: == In order:
+NAME John Snow 
+PLAYER Kit Harrington
+ALIGNMENT CG
+DEITY The Old Gods
+GENDER M
+AGE 14
+HEIGHT 5 11
+WEIGHT 160
+HAIR Brown
+EYES Black
+SKIN White
+RACE Human # This may not do anything
+ABILITIES 15 ; 14; 15; 3 ; 4 ; 18 # IO: STR ; DEX ; CON ; INT ; WIS ; CHA
+CLASS Ranger ; Crow # Seperate each class with a semicolon
+LEVEL 4 ; 2 # In same order as class
+HIT_DIE 10 ; 8 # In same order as class -- hit points are derived 
+#  (C[0] + (.5 * (C[0] * (L[0] - 1))) + (L[0] - 1)) + ((C[1] * L[1]) + L[1]) + ...
+SPEED 30 ; 20 ; 0 ; 0 ; 0 ; 0 # IO: Base ; with armor ; fly ; swim ; climb ; burrow
+AC_VALS 6 ; 0 ; 2 ; 0 ; 0 ; 0 ; 0 # IO: Armor ; shield ; dex ; size ; natural ; deflection ; misc
+INIT 0 # Only misc, DEX is derived
+FORT 6 ; 0 ; 0 ; 0 # IO: Base ; magic ; misc ; temporary -- CON is derived
+REF  4 ; 0 ; 0 ; 0 # See above -- DEX is derived
+WILL 4 ; 0 ; 0 ; 0 # See above -- WIS is derived
+BAB 6 # User has to put this in.
+# CMB is totally derived from other things
+# CMD is totally derived from other things
+# For each skill:
+ACROBATICS 1 ; 3 ; 1 # IO: Ranks, misc mods ; bool of class skill (0 for no, 1 for yes) -- ability is derived,
+#CONTINUE FOR ALL SKILLS MUAHAHAHAHAHAHHAHAH
+LANG "COMMON" ; # String of each language spoken, seperated by semicolon
+
+WEAPON "Bastard Sword" ; 3 ; 18 ; 2 ; 'S' ; 0 ; "NONE" ; 1 ; 10 ; 3
+# IO: String of name ; attack bonus ; min crit threat ; crit mult ; String of type (P, S, B) ; range ; String of ammo type ; damage die ; damage mod
+# REPEAT FOR EVERY ATTACK
+

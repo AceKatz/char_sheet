@@ -84,7 +84,7 @@ struct skill
  * @param class whether or not the character has the skill as a class skill
  * @return pointer to struct skill
  */
-struct skill *build_skill(struct skill *, int, int, int);
+void build_skill(struct skill **, int, int, int);
 
 /**
  * Call to get the value of the modifier for a check with this skill
@@ -92,9 +92,12 @@ struct skill *build_skill(struct skill *, int, int, int);
  * @param index the index of the skill in question
  * @return the sum of all the skill modifiers
  */
-int skill_mod(struct skill);
+int skill_mod(struct skill*);
 
-
+/**
+ *
+ *
+ */
 
 
 #endif

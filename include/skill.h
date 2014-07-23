@@ -82,7 +82,6 @@ struct skill
  * @param index index of the skill (its macro can be passed for ease)
  * @param ranks the number of ranks the character has in the skill
  * @param class whether or not the character has the skill as a class skill
- * @return pointer to struct skill
  */
 void build_skill(struct skill **, int, int, int);
 
